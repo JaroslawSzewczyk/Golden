@@ -6,9 +6,65 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
+}
+
+.wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 1444px;
+      flex-basis: 1444px;
+}
+
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navigation */
+nav {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  z-index: 3;
+  width: 100vw;
+}
+
+nav .wrap {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+nav .wrap h2 {
+  color: #fed136;
+  font-family: "Great Vibes", cursive;
+  font-size: 56px;
+  letter-spacing: 1.3px;
+}
+
+nav .wrap li {
+  display: inline-block;
+}
+
+nav .wrap li a {
+  margin-right: 55px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* Header */
@@ -23,22 +79,13 @@ header {
 
 header .container {
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
 }
 
 header .container .wrap {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-preferred-size: 1444px;
-      flex-basis: 1444px;
   z-index: 3;
 }
 
@@ -59,22 +106,19 @@ header .container .wrap .header-title h1 {
   letter-spacing: 1.88px;
   margin-bottom: 45px;
   font-size: 75px;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
 header .container .wrap .header-btn {
   display: -ms-flexbox;
   display: flex;
-  margin: 70px auto 0;
+  margin: 40px auto 0;
 }
 
 header .container .wrap .header-btn a {
   padding: 25px 55px;
   border-radius: 5px;
   background-color: #fed136;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
 }
 
 header .container::after {

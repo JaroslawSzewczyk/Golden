@@ -15,11 +15,63 @@ cursive;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+body {
+    position: relative;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.wrap {
+    display: flex;
+    flex-basis: 1444px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: $font-header;
+}
+
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 3;
+    width: 100vw;
+
+
+    .wrap {
+        justify-content: space-between;
+        align-items: flex-end;
+
+        h2 {
+            color: #fed136;
+            font-family: $additionl-header-font;
+            font-size: 56px;
+            letter-spacing: 1.3px;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                margin-right: 55px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
 
 /* Header */
 header {
@@ -32,15 +84,10 @@ header {
 
     .container {
         position: relative;
-        display: flex;
-        height: 100%;
-        justify-content: center;
         align-items: center;
 
         .wrap {
-            display: flex;
             flex-wrap: wrap;
-            flex-basis: 1444px;
             z-index: 3;
 
             .header-title {
@@ -58,21 +105,18 @@ header {
                     letter-spacing: 1.88px;
                     margin-bottom: 45px;
                     font-size: 75px;
-                    font-family: $font-header;
                     text-transform: uppercase;
                 }
             }
 
             .header-btn {
                 display: flex;
-                margin: 70px auto 0;
+                margin: 40px auto 0;
 
                 a {
                     padding: 25px 55px;
                     border-radius: 5px;
                     background-color: #fed136;
-                    text-transform: uppercase;
-                    font-family: $font-header;
                 }
             }
         }
