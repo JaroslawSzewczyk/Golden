@@ -204,4 +204,38 @@ header .container::after {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
+
+/* Portfolio */
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio .title-service {
+  text-align: center;
+  padding: 120px 0 76px;
+}
+
+.portfolio .wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.portfolio .wrap .portfolio-box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin-bottom: 50px;
+}
+
+.portfolio .wrap .portfolio-box .box-head img {
+  width: 100%;
+}
+
+.portfolio .wrap .portfolio-box .box-body {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */
