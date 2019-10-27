@@ -48,6 +48,8 @@ nav .wrap {
       justify-content: space-between;
   -ms-flex-align: end;
       align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 nav .wrap h2 {
