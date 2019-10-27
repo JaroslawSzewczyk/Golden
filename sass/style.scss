@@ -27,7 +27,21 @@ body {
 
 .wrap {
     display: flex;
-    flex-basis: 1444px;
+    flex-basis: 1400px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 40px;
+    font-family: $font-header;
+}
+
+h2 {
+    font-family: $font-header;
+    font-size: 18px;
+    letter-spacing: -0.45px;
 }
 
 a {
@@ -35,6 +49,12 @@ a {
     text-transform: uppercase;
     color: #fff;
     font-family: $font-header;
+}
+
+p {
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
 }
 
 
@@ -52,7 +72,6 @@ nav {
     .wrap {
         justify-content: space-between;
         align-items: flex-end;
-        flex-wrap: wrap;
 
         h2 {
             color: #fed136;
@@ -88,11 +107,10 @@ header {
         align-items: center;
 
         .wrap {
-            flex-wrap: wrap;
             z-index: 3;
 
             .header-title {
-                flex-basis: 1444px;
+                flex-basis: 1400px;
                 text-align: center;
 
                 h2 {
@@ -106,7 +124,6 @@ header {
                     letter-spacing: 1.88px;
                     margin-bottom: 45px;
                     font-size: 75px;
-                    text-transform: uppercase;
                 }
             }
 
@@ -134,5 +151,55 @@ header {
             opacity: .55
         }
 
+    }
+}
+
+/* Services */
+
+.services {
+    .container {
+        //flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .title-service {
+            flex-basis: 1400px;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .content-service {
+            flex-basis: 1400px;
+            display: flex;
+            justify-content: space-around;
+
+            .box {
+
+                text-align: center;
+                width: 30%;
+
+                i {
+                    border: 3px solid #fed136;
+                    border-radius: 50%;
+                    font-size: 46px;
+                    padding: 10px;
+                    color: #fed136;
+                    margin-bottom: 28px;
+                }
+
+                h2 {
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    font-family: $font-text;
+                    font-style: normal;
+                }
+            }
+
+        }
     }
 }

@@ -21,8 +21,23 @@ body {
 .wrap {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 1444px;
-      flex-basis: 1444px;
+  -ms-flex-preferred-size: 1400px;
+      flex-basis: 1400px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.45px;
 }
 
 a {
@@ -30,6 +45,12 @@ a {
   text-transform: uppercase;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-style: italic;
+  color: #777777;
 }
 
 /* Navigation */
@@ -48,8 +69,6 @@ nav .wrap {
       justify-content: space-between;
   -ms-flex-align: end;
       align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 nav .wrap h2 {
@@ -86,14 +105,12 @@ header .container {
 }
 
 header .container .wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   z-index: 3;
 }
 
 header .container .wrap .header-title {
-  -ms-flex-preferred-size: 1444px;
-      flex-basis: 1444px;
+  -ms-flex-preferred-size: 1400px;
+      flex-basis: 1400px;
   text-align: center;
 }
 
@@ -108,7 +125,6 @@ header .container .wrap .header-title h1 {
   letter-spacing: 1.88px;
   margin-bottom: 45px;
   font-size: 75px;
-  text-transform: uppercase;
 }
 
 header .container .wrap .header-btn {
@@ -133,5 +149,58 @@ header .container::after {
   height: 100%;
   background-color: #000;
   opacity: .55;
+}
+
+/* Services */
+.services .container {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .container .title-service {
+  -ms-flex-preferred-size: 1400px;
+      flex-basis: 1400px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 120px 0;
+}
+
+.services .container .content-service {
+  -ms-flex-preferred-size: 1400px;
+      flex-basis: 1400px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.services .container .content-service .box {
+  text-align: center;
+  width: 30%;
+}
+
+.services .container .content-service .box i {
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  font-size: 46px;
+  padding: 10px;
+  color: #fed136;
+  margin-bottom: 28px;
+}
+
+.services .container .content-service .box h2 {
+  margin-bottom: 18px;
+}
+
+.services .container .content-service .box p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
