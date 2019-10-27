@@ -237,3 +237,24 @@ header {
         }
     }
 }
+
+/* Footer */
+
+footer .wrap {
+    padding: 40px 0;
+    align-items: center;
+
+    .copyright {
+        margin-right: 120px;
+
+        p {
+            font-family: $font-text;
+            font-style: normal;
+            color: #000;
+        }
+    }
+
+    i {
+        font-size: 40px;
+    }
+}

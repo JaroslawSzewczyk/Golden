@@ -238,4 +238,25 @@ header .container::after {
   background-color: #fff;
   padding: 20px;
 }
+
+/* Footer */
+footer .wrap {
+  padding: 40px 0;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+footer .wrap .copyright {
+  margin-right: 120px;
+}
+
+footer .wrap .copyright p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #000;
+}
+
+footer .wrap i {
+  font-size: 40px;
+}
 /*# sourceMappingURL=style.css.map */
