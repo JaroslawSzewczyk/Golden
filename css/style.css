@@ -1,4 +1,5 @@
-body {
-  background-color: red;
+.row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 /*# sourceMappingURL=style.css.map */
