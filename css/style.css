@@ -218,8 +218,8 @@ header .container::after {
 .portfolio .wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 120px;
 }
 
@@ -285,6 +285,30 @@ footer .wrap i {
   }
   header .container .wrap .header-title h1 {
     font-size: 34px;
+  }
+  /* Service */
+  .services .container .title-service {
+    margin-bottom: 35px;
+  }
+  .services .container .content-service {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .services .container .content-service .box {
+    margin-bottom: 28px;
+    width: 80%;
+  }
+  /* Portfolio */
+  .portfolio .container .wrap {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .portfolio .container .wrap .portfolio-box {
+    width: 80%;
   }
 }
 
