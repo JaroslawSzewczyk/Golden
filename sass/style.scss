@@ -333,6 +333,16 @@ footer .wrap {
             width: 80%;
         }
     }
+
+    /* Footer */
+    footer .wrap {
+        justify-content: center;
+
+        .copyright {
+            margin: 0;
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 834px) {
