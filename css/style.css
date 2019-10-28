@@ -56,7 +56,7 @@ p {
 /* Navigation */
 nav {
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px;
@@ -258,5 +258,13 @@ footer .wrap .copyright p {
 
 footer .wrap i {
   font-size: 40px;
+}
+
+/* Media Query */
+@media (max-width: 767px) {
+  header .header-title h2 {
+    font-size: 5px;
+    color: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */
