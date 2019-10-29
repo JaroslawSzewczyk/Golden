@@ -325,12 +325,19 @@ footer .wrap {
 
     /* Portfolio */
 
-    .portfolio .container .wrap {
-        flex-direction: column;
-        align-items: center;
+    .portfolio .container {
 
-        .portfolio-box {
-            width: 80%;
+        .title-service {
+            padding: 10px 0;
+        }
+
+        .wrap {
+            flex-direction: column;
+            align-items: center;
+
+            .portfolio-box {
+                flex-basis: 0;
+            }
         }
     }
 

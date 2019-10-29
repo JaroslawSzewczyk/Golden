@@ -301,6 +301,9 @@ footer .wrap i {
     width: 80%;
   }
   /* Portfolio */
+  .portfolio .container .title-service {
+    padding: 10px 0;
+  }
   .portfolio .container .wrap {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -308,7 +311,8 @@ footer .wrap i {
         align-items: center;
   }
   .portfolio .container .wrap .portfolio-box {
-    width: 80%;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
   /* Footer */
   footer .wrap {
