@@ -59,9 +59,8 @@ nav {
   top: 1%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px;
   z-index: 3;
-  width: 100vw;
+  width: 100%;
 }
 
 nav .wrap {
@@ -212,7 +211,6 @@ header .container::after {
 
 .portfolio .title-service {
   text-align: center;
-  padding: 120px 0 76px;
 }
 
 .portfolio .wrap {
