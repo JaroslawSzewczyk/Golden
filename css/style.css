@@ -222,8 +222,7 @@ header .container::after {
 }
 
 .portfolio .wrap .portfolio-box {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  width: 30%;
   margin-bottom: 50px;
 }
 
@@ -309,8 +308,7 @@ footer .wrap i {
         align-items: center;
   }
   .portfolio .container .wrap .portfolio-box {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
+    width: 80%;
   }
   /* Footer */
   footer .wrap {

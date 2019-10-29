@@ -222,7 +222,7 @@ header {
         margin-bottom: 120px;
 
         .portfolio-box {
-            flex-basis: 30%;
+            width: 30%;
             margin-bottom: 50px;
 
             .box-head img {
@@ -336,7 +336,7 @@ footer .wrap {
             align-items: center;
 
             .portfolio-box {
-                flex-basis: 0;
+                width: 80%;
             }
         }
     }
